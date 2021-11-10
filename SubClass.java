@@ -12,7 +12,7 @@ public class SubClass extends PhanTu<Integer> {
     }
 
     @Override
-    public static boolean isGreaterThan(Integer a) {
+    public boolean isGreaterThan(Integer a) {
         return super.value.compareTo(a) > 0;
     }
 
@@ -22,7 +22,7 @@ public class SubClass extends PhanTu<Integer> {
             Scanner sc = new Scanner(System.in);
             s = sc.nextLine();
             FileOutputStream fos = new FileOutputStream(s);
-            Writer dos = new BufferedWriter(new OutputStreamWriter(fos);
+            Writer dos = new BufferedWriter(new OutputStreamWriter(fos));
             for (Integer i : list) {
                 dos.write(i + "\n");
             }
@@ -40,7 +40,7 @@ public class SubClass extends PhanTu<Integer> {
             Scanner sc = new Scanner(System.in);
             s = sc.nextLine();
             File file = new File(s);
-            Scanner sc = new Scanner(file);
+            sc = new Scanner(file);
             int n = sc.nextInt();
             for(int i = 1; i<=n;i++){
                 int x=sc.nextInt();
